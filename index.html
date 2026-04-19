@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Политика конфиденциальности и Условия использования бота KillaBot для Discord">
+    <title>KillaBot — Юридическая информация</title>
+    <style>
+        :root {
+            --bg-primary: #23272a;
+            --bg-secondary: #2c2f33;
+            --accent: #b10000;
+            --accent-hover: #5b6eae;
+            --text: #ffffff;
+            --text-muted: #99aab5;
+            --border: #40444b;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+            background: var(--bg-secondary); 
+            color: var(--text); 
+            line-height: 1.7; 
+            font-size: 16px;
+        }
+        
+        header { 
+            background: var(--bg-primary); 
+            padding: 1.5rem 1rem; 
+            text-align: center; 
+            border-bottom: 2px solid var(--accent); 
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        h1 { color: var(--accent); margin-bottom: 1rem; font-size: 1.8rem; }
+        
+        nav { display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap; }
+        .nav-btn { 
+            background: transparent; 
+            color: var(--text); 
+            border: 1px solid var(--accent); 
+            padding: 0.6rem 1.2rem; 
+            cursor: pointer; 
+            border-radius: 6px; 
+            transition: background 0.2s, color 0.2s; 
+            font-size: 0.95rem; 
+        }
+        .nav-btn:hover, .nav-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+        
+        main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+        .page { 
+            display: none; 
+            background: var(--bg-primary); 
+            padding: 2rem; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4); 
+        }
+        .page.active { display: block; animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+        
+        /* Стили для юридического контента */
+        .legal-content { color: var(--text-muted); }
+        .legal-content h3 { 
+            color: var(--text); 
+            margin: 1.8rem 0 0.8rem; 
+            font-size: 1.3rem;
+            border-left: 3px solid var(--accent);
+            padding-left: 0.8rem;
+        }
+        .legal-content p { margin-bottom: 1rem; }
+        .legal-content ul, .legal-content ol { 
+            margin-left: 1.8rem; 
+            margin-bottom: 1rem; 
+            color: var(--text-muted); 
+        }
+        .legal-content li { margin-bottom: 0.4rem; }
+        .legal-content a { color: var(--accent); text-decoration: none; }
+        .legal-content a:hover { text-decoration: underline; }
+        .legal-meta { 
+            background: var(--bg-secondary); 
+            padding: 1rem; 
+            border-radius: 6px; 
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        .legal-meta strong { color: var(--text); }
+        
+        .support-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+        .support-link:hover { text-decoration: underline; }
+        
+        @media (max-width: 600px) { 
+            nav { flex-direction: column; } 
+            .nav-btn { width: 100%; text-align: center; } 
+            main { margin: 1rem auto; }
+            .page { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KillaBot</h1>
+        <nav>
+            <button class="nav-btn active" data-page="privacy">Политика конфиденциальности</button>
+            <button class="nav-btn" data-page="tos">Условия использования</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Страница Политики конфиденциальности (открывается по умолчанию) -->
+        <section id="privacy" class="page active">
+            <h2>Политика конфиденциальности</h2>
+            <div class="legal-meta">
+                Последнее обновление: <strong>[19.04.2026]</strong>
+            </div>
+            <div class="legal-content">
+                <p>
+                    Мы уважаем вашу конфиденциальность и стремимся защищать ваши персональные данные. 
+                    Эта Политика конфиденциальности объясняет, какие данные мы собираем, как мы их используем 
+                    и какие права у вас есть в отношении ваших данных при использовании нашего Discord бота.
+                </p>
+
+                <h3>1. Сбор и использование персональных данных</h3>
+                <p>
+                    Мы запрашиваем и собираем персональные данные только тогда, когда это действительно необходимо 
+                    для предоставления заявленной функциональности нашего Discord бота. Данные собираются честными 
+                    и законными способами, с Вашего ведома и согласия. Мы всегда готовы предоставить информацию о том, 
+                    с какой целью собираются данные и как они будут использоваться.
+                </p>
+
+                <h3>2. Типы собираемых данных</h3>
+                <p>Мы можем собирать следующие типы данных:</p>
+                <ul>
+                    <li><strong>Идентификаторы Discord:</strong> ID пользователя(ей), ID сервер(а/ов), ID канал(а/ов), ID категори(и/й)</li>
+                    <li><strong>Контент взаимодействия:</strong> Сообщения и команды, отправленные боту</li>
+                    <li><strong>Настройки:</strong> Настройки сервера и предпочтения пользователей</li>
+                </ul>
+
+                <h3>3. Сроки хранения данных</h3>
+                <p>
+                    Мы храним собранную информацию ровно столько времени, сколько необходимо для предоставления 
+                    заявленной функциональности нашего Discord бота. Как только данные перестают быть необходимыми, 
+                    они удаляются или обезличиваются.
+                </p>
+
+                <h3>4. Защита данных</h3>
+                <p>
+                    Мы предпринимаем коммерчески приемлемые меры для защиты Ваших персональных данных от потерь, 
+                    краж, несанкционированного доступа, разглашения, копирования, использования или изменения. 
+                    Эти меры включают технические и организационные средства для обеспечения безопасности данных.
+                </p>
+
+                <h3>5. Передача данных третьим лицам</h3>
+                <p>
+                    Мы не публикуем Ваши персональные данные и не передаем их третьим лицам, за исключением случаев, 
+                    предусмотренных законодательством. В случаях, когда передача данных третьим лицам необходима 
+                    для выполнения обязательств перед Вами, мы запрашиваем Ваше согласие.
+                </p>
+
+                <h3>6. Ваши права</h3>
+                <p>
+                    Вы имеете право запросить удаление всех данных, связанных с Вашим Discord сервером. 
+                    Для этого Вы можете обратиться на наш сервер поддержки или на почту. 
+                    Мы рассмотрим Ваш запрос и предпримем все необходимые меры для удаления данных в разумные сроки.
+                </p>
+
+                <h3>7. Согласие с политикой конфиденциальности</h3>
+                <p>
+                    Дальнейшее использование нашего Discord бота и связанных с ним ресурсов будет рассматриваться 
+                    как согласие с нашей политикой конфиденциальности. Если у Вас есть какие-либо вопросы о том, 
+                    как мы обрабатываем пользовательские данные и личную информацию, не стесняйтесь обратиться к нам.
+                </p>
+                <a href="https://discord.gg/6c6HzpTbJ8" class="support-link" target="_blank">
+                    → Перейти на сервер поддержки
+                </a>
+
+                <p style="margin-top: 2rem; font-size: 0.9rem;">
+                    <em>
+                        Эта политика конфиденциальности может обновляться. Мы рекомендуем регулярно просматривать 
+                        эту страницу для получения актуальной информации о нашей политике в области конфиденциальности.
+                    </em>
+                </p>
+            </div>
+        </section>
+
+        <!-- Страница Условий использования -->
+        <section id="tos" class="page">
+            <h2>Условия использования</h2>
+            <div class="legal-meta">
+                Последнее обновление: <strong>[19.04.2026]</strong>
+            </div>
+            <div class="legal-content">
+
+                <h3>1. Введение</h3>
+                <p>
+                    Пользуясь данным ботом Discord, Вы соглашаетесь соблюдать настоящие 
+                    условия использования, условия использования Discord, все применимые законы и регламенты, 
+                    а также соглашаетесь с тем, что несёте полную ответственность за соблюдение местного законодательства. 
+                    Если Вы не согласны с каким-либо из этих условий, Вам запрещается использование данного сайта 
+                    и связанных с ним ресурсов.
+                </p>
+
+                <h3>2. Изменения условий</h3>
+                <p>
+                    Мы оставляем за собой право в любое время изменять или обновлять эти Условия. 
+                    Изменения вступают в силу сразу после их публикации. Ваше дальнейшее использование Услуг 
+                    после внесения изменений означает принятие новых Условий.
+                </p>
+
+                <h3>3. Доступ к Услугам</h3>
+                <p>
+                    Мы стремимся обеспечить бесперебойный доступ к нашим Услугам, но не гарантируем их постоянную 
+                    доступность. Мы оставляем за собой право приостановить или прекратить доступ к Услугам 
+                    в любое время без предварительного уведомления.
+                </p>
+
+                <h3>4. Использование Услуг</h3>
+                <p>
+                    Вы соглашаетесь использовать наши Услуги только в законных целях и в соответствии с настоящими Условиями. 
+                    Запрещается использование Услуг для:
+                </p>
+                <ul>
+                    <li>Нарушения любых применимых законов или нормативных актов</li>
+                    <li>Нарушения прав других лиц, включая права на конфиденциальность и интеллектуальную собственность</li>
+                    <li>Распространения вредоносного программного обеспечения, спама или других вредоносных материалов</li>
+                    <li>Попыток декомпилировать или заниматься обратной разработкой (реверс-инжинирингом) любого ПО, 
+                        размещенного на веб-сайте KillaBot и связанных ресурсах</li>
+                </ul>
+                <p>
+                    Не соблюдение условий использования услуг приведёт к ограничению предоставления услуг на неограниченный срок.
+                </p>
+
+                <h3>5. Пользовательский контент</h3>
+                <p>
+                    Вы сохраняете права на любой контент, который Вы отправляете или публикуете через наши Услуги. 
+                    Вы предоставляете нам неисключительное, бессрочное, безвозмездное право использовать, копировать, 
+                    изменять, распространять и демонстрировать Ваш Пользовательский контент в рамках предоставления Услуг.
+                </p>
+
+                <h3>6. Конфиденциальность</h3>
+                <p>
+                    Ваша конфиденциальность важна для нас. Пожалуйста, ознакомьтесь с нашей 
+                    <button class="nav-btn" data-page="privacy" style="padding: 0.3rem 0.6rem; font-size: 0.9rem; vertical-align: baseline;">
+                        Политикой конфиденциальности
+                    </button>, 
+                    чтобы узнать, как мы собираем, используем и защищаем Ваши персональные данные.
+                </p>
+
+                <h3>7. Ограничение ответственности</h3>
+                <p>
+                    Наши Услуги предоставляются "как есть" и "по мере доступности". Мы не несем ответственности 
+                    за любые прямые, косвенные, случайные, специальные, косвенные или штрафные убытки, 
+                    возникающие в связи с использованием или невозможностью использования Услуг.
+                </p>
+
+                <h3>8. Возмещение убытков</h3>
+                <p>
+                    Вы соглашаетесь возместить и обезопасить нас от любых претензий, убытков, обязательств, 
+                    расходов (включая разумные гонорары адвокатов), возникающих в связи с Вашим использованием 
+                    Услуг или нарушением этих Условий.
+                </p>
+
+                <h3>9. Прекращение</h3>
+                <p>
+                    Мы оставляем за собой право прекратить или приостановить Ваш доступ к Услугам в любое время 
+                    и по любой причине без предварительного уведомления.
+                </p>
+
+                <h3>10. Применимое право</h3>
+                <p>
+                    Эти Условия регулируются и толкуются в соответствии с законодательством страны, 
+                    в которой мы зарегистрированы. Любые споры, возникающие в связи с этими Условиями, 
+                    подлежат исключительной юрисдикции судов этой страны.
+                </p>
+
+                <h3>11. Контакты</h3>
+                <p>
+                    Если у Вас есть вопросы или комментарии относительно этих Условий, пожалуйста, 
+                    свяжитесь с нами через наш сервер поддержки или по электронной почте:
+                </p>
+                <p style="margin-left: 1.8rem;">
+                <a href="https://discord.gg/6c6HzpTbJ8" target="_blank">Сервер поддержки Discord</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navButtons = document.querySelectorAll('.nav-btn');
+            const pages = document.querySelectorAll('.page');
+
+            // Функция переключения страниц
+            function showPage(pageId) {
+                navButtons.forEach(btn => {
+                    if (btn.getAttribute('data-page') === pageId) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+                
+                pages.forEach(page => {
+                    if (page.id === pageId) {
+                        page.classList.add('active');
+                    } else {
+                        page.classList.remove('active');
+                    }
+                });
+                
+                // Прокрутка наверх при переключении
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            // Обработчик кликов по навигации
+            navButtons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetPage = btn.getAttribute('data-page');
+                    showPage(targetPage);
+                });
+            });
+
+            // Поддержка навигации через клавиатуру (для доступности)
+            document.addEventListener('keydown', (e) => {
+                if (e.altKey || e.ctrlKey || e.metaKey) return;
+                
+                const activePage = document.querySelector('.page.active');
+                if (!activePage) return;
+                
+                // Переключение вкладок клавишами 1, 2
+                if (e.key === '1') showPage('privacy');
+                if (e.key === '2') showPage('tos');
+            });
+        });
+    </script>
+</body>
+</html>
